@@ -1,0 +1,64 @@
+{
+  "name": "wak",
+  "version": "1.0.0",
+  "main": "index.ts",
+  "license": "WTFPL",
+  "dependencies": {
+    "@material-ui/core": "^3.0.1",
+    "@material-ui/icons": "^1.1.1",
+    "@types/bcryptjs": "^2.4.1",
+    "@types/bluebird": "^3.5.23",
+    "@types/jsonwebtoken": "^7.2.7",
+    "@types/mongoose": "^5.0.18",
+    "@types/node": "^10.3.4",
+    "@types/qs": "^6.5.1",
+    "@types/react": "^16.4.11",
+    "@types/react-dom": "^16.0.4",
+    "@types/react-fontawesome": "^1.6.3",
+    "@types/react-router-dom": "^4.2.7",
+    "add": "^2.0.6",
+    "axios": "^0.18.0",
+    "bcryptjs": "^2.4.3",
+    "copy-webpack-plugin": "^4.5.2",
+    "detect-browser": "^3.0.0",
+    "fastify": "^1.6.0",
+    "fastify-static": "^0.12.0",
+    "history": "^4.7.2",
+    "isomorphic-ws": "^4.0.1",
+    "jsonwebtoken": "^8.3.0",
+    "mobx": "^4.3.1",
+    "mobx-react": "^5.2.3",
+    "mongoose": "^5.2.12",
+    "parcel-bundler": "^1.9.7",
+    "parcel-plugin-copy": "^1.0.2",
+    "qs": "^6.5.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-router-dom": "^4.3.1",
+    "reflect-metadata": "^0.1.12",
+    "source-map-support": "^0.5.6",
+    "ts-node": "^6.1.2",
+    "tslib": "^1.9.2",
+    "typegoose": "^5.2.1",
+    "typescript": "^3.0.1",
+    "typestyle": "^2.0.1",
+    "ws": "^6.0.0"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.26",
+    "tslint": "^5.10.0"
+  },
+  "resolutions": {
+    "@types/react": "^16.0.40"
+  },
+  "scripts": {
+    "start": "ts-node --project ./tsconfig.server.json index.ts",
+    "develop": "ts-node-dev --project ./tsconfig.server.json index.ts",
+    "build": "NODE_ENV=production parcel build ./src/frontend/assets/ts/app.tsx --out-dir public  --no-source-maps --detailed-report",
+    "watch": "NODE_ENV=development parcel watch ./src/frontend/assets/ts/app.tsx --out-dir public --hmr-port 3001"
+  },
+  "staticPath": {
+    "source": "src/frontend/index.html",
+    "target": "public/index.html"
+  }
+}

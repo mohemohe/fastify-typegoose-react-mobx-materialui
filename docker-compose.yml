@@ -1,0 +1,35 @@
+version: '3.2'
+services:
+  server:
+    build: ./develop
+    env_file:
+      - .env
+    networks:
+      - default
+    ports:
+      - '3000:3000'
+      - '3001:3001'
+    volumes:
+      - type: bind
+        source: ./
+        target: /tmp/server
+    depends_on:
+      - mongo
+  mongo:
+    image: mongo
+    networks:
+      - default
+    ports:
+      - 27017
+    volumes:
+      - type: volume
+        source: mongo-db
+        target: /data/db
+      - type: volume
+        source: mongo-configdb
+        target: /data/configdb
+volumes:
+  mongo-db: null
+  mongo-configdb: null
+networks:
+  default: null
