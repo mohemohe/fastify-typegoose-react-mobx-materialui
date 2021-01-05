@@ -17,7 +17,7 @@
     "@types/react-fontawesome": "^1.6.3",
     "@types/react-router-dom": "^4.2.7",
     "add": "^2.0.6",
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "bcryptjs": "^2.4.3",
     "copy-webpack-plugin": "^4.5.2",
     "detect-browser": "^3.0.0",
