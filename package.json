@@ -22,7 +22,7 @@
     "copy-webpack-plugin": "^4.5.2",
     "detect-browser": "^3.0.0",
     "fastify": "^1.6.0",
-    "fastify-static": "^0.12.0",
+    "fastify-static": "^4.2.4",
     "history": "^4.7.2",
     "isomorphic-ws": "^4.0.1",
     "jsonwebtoken": "^8.3.0",
